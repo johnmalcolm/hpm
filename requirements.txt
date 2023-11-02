@@ -5,3 +5,5 @@ seaborn==0.13.0
 scikit-learn==1.2.2
 ipykernel==6.26.0
 openpyxl==3.1.2
+semopy==2.3.10
+factor-analyzer==0.5.0
