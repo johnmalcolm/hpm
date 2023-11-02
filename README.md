@@ -1,6 +1,5 @@
 # High Performance Manufacturing 
-Environmental Practices, Environmental Performance & Lean (moderating variable)
-
+Environmental Practices, Environmental Performance & Lean 
 ## Folder Structure
 ```
 hpm/
