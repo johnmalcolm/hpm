@@ -4,7 +4,7 @@ Environmental Practices, Environmental Performance & Lean
 ```
 hpm/
 │
-├── .venv/ # Virtual environment folder
+├── .venv/              # Virtual environment folder
 │
 ├── notebooks/          # Jupyter notebooks
 │   ├── exploratory/    # Initial explorations and analyses
