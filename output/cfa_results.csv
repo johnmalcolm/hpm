@@ -1,14 +1,14 @@
-Bundle,HPM code,Item description,Loading,SE,t-value
-Environmental Practices,Environmentally Preferable Packaging,Environmentally Preferable Packaging,0.44768295620319776,0.05962061438699486,7.508861839250881
-Environmental Practices,Third Party Monitoring of Supplier Working Conditions,Third Party Monitoring of Supplier Working Conditions,0.540919129218337,0.0824631397697989,6.559526240794944
-Environmental Practices,Water Efficiency,Water Efficiency,0.542843241964965,0.06571280730458727,8.260843878558058
-Environmental Practices,Substituting Environmentally Preferable Direct Materials,Substituting Environmentally Preferable Direct Materials,0.6466344159224416,0.07421042293823206,8.713525544257552
-Equipment Layout,Equipment Layout - Low Inventories,Equipment Layout - Low Inventories,0.736921427819249,0.052823534602791565,13.95062699534508
-Equipment Layout,Equipment Layout - Minimized Handling,Equipment Layout - Minimized Handling,0.7571690185077428,0.056553261735033236,13.388600326101027
-Equipment Layout,Equipment Layout - JIT Production,Equipment Layout - JIT Production,0.6150295511641051,0.06008253931642963,10.236410746972616
-JIT & Kanban,JIT Delivery by Suppliers - Timely Delivery,JIT Delivery by Suppliers - Timely Delivery,0.5154517732742887,0.07097285192439032,7.262661134477394
-JIT & Kanban,JIT Delivery by Suppliers - Daily Shipments,JIT Delivery by Suppliers - Daily Shipments,0.29441638259952574,0.0797697042995696,3.6908295597269034
-JIT & Kanban,JIT Delivery by Suppliers - Pull System,JIT Delivery by Suppliers - Pull System,0.46000172721504806,0.0788424692171344,5.8344409019990255
-JIT & Kanban,Kanban - Supplier Containers,Kanban - Supplier Containers,0.6118052213010046,0.0737836689858557,8.291878537759994
-JIT & Kanban,Kanban - Production Control Pull System,Kanban - Production Control Pull System,1.0357338998850256,0.07037724478266759,14.716886162331049
-JIT & Kanban,Kanban - Production Control Signals,Kanban - Production Control Signals,1.0846691174893137,0.06900302672313045,15.719152753131661
+Bundle,Item description,Loading,SE,t-value
+Environmental Practices,Environmentally Preferable Packaging,0.44768295620319776,0.05962061438699486,7.508861839250881
+Environmental Practices,Third Party Monitoring of Supplier Working Conditions,0.540919129218337,0.0824631397697989,6.559526240794944
+Environmental Practices,Water Efficiency,0.542843241964965,0.06571280730458727,8.260843878558058
+Environmental Practices,Substituting Environmentally Preferable Direct Materials,0.6466344159224416,0.07421042293823206,8.713525544257552
+Equipment Layout,Equipment Layout - Low Inventories,0.736921427819249,0.052823534602791565,13.95062699534508
+Equipment Layout,Equipment Layout - Minimized Handling,0.7571690185077428,0.056553261735033236,13.388600326101027
+Equipment Layout,Equipment Layout - JIT Production,0.6150295511641051,0.06008253931642963,10.236410746972616
+JIT & Kanban,JIT Delivery by Suppliers - Timely Delivery,0.5154517732742887,0.07097285192439032,7.262661134477394
+JIT & Kanban,JIT Delivery by Suppliers - Daily Shipments,0.29441638259952574,0.0797697042995696,3.6908295597269034
+JIT & Kanban,JIT Delivery by Suppliers - Pull System,0.46000172721504806,0.0788424692171344,5.8344409019990255
+JIT & Kanban,Kanban - Supplier Containers,0.6118052213010046,0.0737836689858557,8.291878537759994
+JIT & Kanban,Kanban - Production Control Pull System,1.0357338998850256,0.07037724478266759,14.716886162331049
+JIT & Kanban,Kanban - Production Control Signals,1.0846691174893137,0.06900302672313045,15.719152753131661
