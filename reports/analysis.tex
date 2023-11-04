@@ -1,42 +1,214 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[]{article}
+\makeatletter\if@twocolumn\PassOptionsToPackage{switch}{lineno}\else\fi\makeatother
 
-% Packages
-\usepackage[utf8]{inputenc} % Allows the use of special characters
-\usepackage[T1]{fontenc}    % Font encoding
-\usepackage{geometry}       % For page size and margins
-\usepackage{graphicx}       % For including images
-\usepackage{amsmath}        % For math equations, symbols, etc.
-\usepackage{hyperref}       % For hyperlinks
-\usepackage{lipsum}         % For generating dummy text
+%Publisher: Emerald Publishing
+%Template Provided By: Typeset
 
-% Set page geometry
-\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{amsmath,tabulary,graphicx,times,caption,fancyhdr,amssymb,amsfonts,amstext,amsbsy}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[paperheight=10in,paperwidth=6.5in,margin=2cm,headsep=.5cm,headheight=1.5cm,top=2.5cm]{geometry}
+\renewenvironment{abstract} {\vspace*{-1pc}\trivlist\item[]\leftskip\oupIndent\hrulefill\par\vskip4pt\noindent\textbf{\abstractname}\mbox{\null}\\}{\par\noindent\hrulefill\endtrivlist} 
+\linespread{1.13} \date{}
+\captionsetup[figure]{labelfont=sc,skip=1.4pt,aboveskip=1pc}
+\captionsetup[table]{labelfont=sc,skip=1.4pt,labelsep=newline}
 
-\title{Research Assignment}
-\author{Alessa Aila, Astrid Holmström, Eemil Rantala, John Anderson, Valterri Luodemäki}
-\date{\today} % or specific date: \date{25 December 2023}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Following additional macros are required to function some 
+% functions which are not available in the class used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url,multirow,morefloats,floatflt,cancel,tfrupee}
+\makeatletter
+
+
+\AtBeginDocument{\@ifpackageloaded{textcomp}{}{\usepackage{textcomp}}}
+\makeatother
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage[nointegrals]{wasysym}
+\urlstyle{rm}
+\makeatletter
+
+%%%For Table column width calculation.
+\def\mcWidth#1{\csname TY@F#1\endcsname+\tabcolsep}
+
+%%Hacking center and right align for table
+\def\cAlignHack{\rightskip\@flushglue\leftskip\@flushglue\parindent\z@\parfillskip\z@skip}
+\def\rAlignHack{\rightskip\z@skip\leftskip\@flushglue \parindent\z@\parfillskip\z@skip}
+
+%Etal definition in references
+\@ifundefined{etal}{\def\etal{\textit{et~al}}}{}
+
+
+%\if@twocolumn\usepackage{dblfloatfix}\fi
+\usepackage{ifxetex}
+\ifxetex\else\if@twocolumn\@ifpackageloaded{stfloats}{}{\usepackage{dblfloatfix}}\fi\fi
+
+\AtBeginDocument{
+\expandafter\ifx\csname eqalign\endcsname\relax
+\def\eqalign#1{\null\vcenter{\def\\{\cr}\openup\jot\m@th
+  \ialign{\strut$\displaystyle{##}$\hfil&$\displaystyle{{}##}$\hfil
+      \crcr#1\crcr}}\,}
+\fi
+}
+
+%For fixing hardfail when unicode letters appear inside table with endfloat
+\AtBeginDocument{%
+  \@ifpackageloaded{endfloat}%
+   {\renewcommand\efloat@iwrite[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}}{\newif\ifefloat@tables}%
+}%
+
+\def\BreakURLText#1{\@tfor\brk@tempa:=#1\do{\brk@tempa\hskip0pt}}
+\let\lt=<
+\let\gt=>
+\def\processVert{\ifmmode|\else\textbar\fi}
+\let\processvert\processVert
+
+\@ifundefined{subparagraph}{
+\def\subparagraph{\@startsection{paragraph}{5}{2\parindent}{0ex plus 0.1ex minus 0.1ex}%
+{0ex}{\normalfont\small\itshape}}%
+}{}
+
+% These are now gobbled, so won't appear in the PDF.
+\newcommand\role[1]{\unskip}
+\newcommand\aucollab[1]{\unskip}
+  
+\@ifundefined{tsGraphicsScaleX}{\gdef\tsGraphicsScaleX{1}}{}
+\@ifundefined{tsGraphicsScaleY}{\gdef\tsGraphicsScaleY{.9}}{}
+% To automatically resize figures to fit inside the text area
+\def\checkGraphicsWidth{\ifdim\Gin@nat@width>\linewidth
+	\tsGraphicsScaleX\linewidth\else\Gin@nat@width\fi}
+
+\def\checkGraphicsHeight{\ifdim\Gin@nat@height>.9\textheight
+	\tsGraphicsScaleY\textheight\else\Gin@nat@height\fi}
+
+\def\fixFloatSize#1{}%\@ifundefined{processdelayedfloats}{\setbox0=\hbox{\includegraphics{#1}}\ifnum\wd0<\columnwidth\relax\renewenvironment{figure*}{\begin{figure}}{\end{figure}}\fi}{}}
+\let\ts@includegraphics\includegraphics
+
+\def\inlinegraphic[#1]#2{{\edef\@tempa{#1}\edef\baseline@shift{\ifx\@tempa\@empty0\else#1\fi}\edef\tempZ{\the\numexpr(\numexpr(\baseline@shift*\f@size/100))}\protect\raisebox{\tempZ pt}{\ts@includegraphics{#2}}}}
+
+%\renewcommand{\includegraphics}[1]{\ts@includegraphics[width=\checkGraphicsWidth]{#1}}
+\AtBeginDocument{\def\includegraphics{\@ifnextchar[{\ts@includegraphics}{\ts@includegraphics[width=\checkGraphicsWidth,height=\checkGraphicsHeight,keepaspectratio]}}}
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\def\URL#1#2{\@ifundefined{href}{#2}{\href{#1}{#2}}}
+
+%%For url break
+\def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}%
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+
+
+
+\edef\fntEncoding{\f@encoding}
+\def\EUoneEnc{EU1}
+\makeatother
+\def\floatpagefraction{0.8} 
+\def\dblfloatpagefraction{0.8}
+\def\style#1#2{#2}
+\def\xxxguillemotleft{\fontencoding{T1}\selectfont\guillemotleft}
+\def\xxxguillemotright{\fontencoding{T1}\selectfont\guillemotright}
+
+\newif\ifmultipleabstract\multipleabstractfalse%
+\newenvironment{typesetAbstractGroup}{}{}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\usepackage[noindentafter]{titlesec}
+\def\NormalBaseline{\def\baselinestretch{1.1}}
+
+\titleformat{\section}[hang]{\NormalBaseline\filright\large\fontsize{12}{15}\bfseries\boldmath}
+{\large\thesection.}
+{10pt}
+{\noindent}
+[]
+\titleformat{\subsection}[hang]{\NormalBaseline\filright\fontsize{11}{13}\bfseries\itshape\boldmath}
+{\thesubsection.}
+{10pt}
+{}
+[]
+\titleformat{\subsubsection}[hang]{\NormalBaseline\filright\fontsize{10}{12}\bfseries\itshape\boldmath}
+{\thesubsubsection.}
+{10pt}
+{}
+[]
+\titleformat{\paragraph}[runin]{\NormalBaseline\filright\itshape}
+{\theparagraph.}
+{10pt}
+{}
+[]
+\titleformat{\subparagraph}[runin]{\NormalBaseline\filright\itshape}
+{\thesubparagraph.}
+{10pt}
+{}
+[]
+
+
+\titlespacing{\section}{0pt}{1.5\baselineskip}{.2\baselineskip}  
+\titlespacing{\subsection}{0pt}{1\baselineskip}{.2\baselineskip}  
+\titlespacing{\subsubsection}{0pt}{1.5\baselineskip}{.2\baselineskip}  
+\titlespacing{\paragraph}{0pt}{.5\baselineskip}{10pt}  
+\titlespacing{\subparagraph}{0pt}{.5\baselineskip}{10pt}  
+
+
+\usepackage[tablesonly]{endfloat}
+
+
+\makeatletter\def\oupIndent{1pt}
+\def\author#1{\gdef\@author{\hskip-\dimexpr(\tabcolsep)\hskip\oupIndent\parbox{\dimexpr\textwidth-\oupIndent}{\centering\bfseries#1}}}
+\def\title#1{\gdef\@title{\centering\bfseries\ifx\@articleType\@empty\else\@articleType\\\fi#1}}
+\let\@articleType\@empty \def\articletype#1{\gdef\@articleType{{\normalfont\itshape#1}}}
+\fancypagestyle{headings}{\fancyhf{}\fancyhead[C]{\RunningHead\hspace*{1pc}}\fancyhead[R]{\thepage}}\pagestyle{headings}
+\emergencystretch =15pt 
+\makeatother
+\usepackage[authoryear, round]{natbib} % authoryear for author-year citations, round for parentheses
 
 \begin{document}
 
-\maketitle
-\tableofcontents
-\newpage
 
+\title{Lean JIT and Environmental Performance: an empirical analysis}
+\author{Alessa Aila\textsuperscript{1}\thanks{E-mail: alessa.aila@aalto.fi}{ },
+            Astrid Holstr{\"{o}}m\textsuperscript{1}\thanks{E-mail: astrid.holmstrom@aalto.fi}{ },
+            Eemil Rantala\textsuperscript{1}\thanks{E-mail: eemil.rantala@aalto.fi}{ },
+            John Anderson\textsuperscript{1}\thanks{E-mail: john.anderson@aalto.fi}{ } and
+            Valtteri Luodem{\"{a}}ki\textsuperscript{1}\thanks{E-mail: valtteri.luodemaki@aalto.fi}{ }~\\[-3pt]\normalsize\normalfont\itshape 
+~\\\textsuperscript{1}{Department of Industrial Engineering and Management\unskip, Aalto University}}
+\def\RunningHead{{Lean JIT and Environmental Performance: an empirical analysis}}
+
+\maketitle 
+
+
+\begin{abstract}
+test
+\end{abstract}\def\keywordstitle{Keywords}
+    
 \section{Introduction}
-\lipsum[1-2] % Generates dummy text for the introduction. Remove \lipsum and replace with your content.
+Over the past decade there has been increasing research published on both the synergies and trade-offs between lean manufacturing, environmental practices, and environmental performance \citep{henaoLeanManufacturingSustainable2019, abualfaraaLeanGreenManufacturingPractices2020, lobomesquitaExploringRelationshipsIntegrating2022, garza-reyesLeanGreenSystematic2015, kingLeanGreenEmpirical2009}.
 
-\section{Methodology}
-\lipsum[3-4] % Generates dummy text for the methodology.
+Referred to as `lean-green', this growing research area often cites the Triple-Bottom-Line approach, which underscores the need for performance in economic growth, environmental preservation, and social responsibility, in order to achieve sustainability \citep{henaoLeanManufacturingSustainable2019}. Motivated by this body of research as well as our interest in sustainability studies, we have decided to study environmental practices and performance and how they interact with lean practices.
+
+Abualfaraa et al.~(2020) outline several research gaps and opportunities for those interested in lean-green manufacturing \citep{abualfaraaLeanGreenManufacturingPractices2020}. In their Structured Literature Review of articles published between 2000 and 2018, they have identified several research directions in both the synergies and incompatibilities between environmental and lean practices. On one line, it is argued that lean practices may work as a catalyst for environmental practices and innovation. On the other, the incompatibilities between objectives of the two approaches are highlighted. This could be, for example, fulfilling customer requirements with small lot sizes and high replenishment frequency, which in turn could lead to higher emissions and more packaging waste.
+
+The review also pointed out the need for more quantitative research with a focus on robust, well-defined sustainability metrics. Through an analysis of environmental practices and performance with lean practices as a moderating variable, our goal is to contribute to this research gap \citep{abualfaraaLeanGreenManufacturingPractices2020}.
+    
+\section{Theory}
+test
+
+\section{Methods}
+test
 
 \section{Results}
-\lipsum[5-6] % Generates dummy text for the results.
+test
 
-\section{Conclusion}
-\lipsum[7-8] % Generates dummy text for the conclusion.
+\section{Conclusions}
+test
 
-% Bibliography
-% If you have a bibliography, uncomment the two lines below and use the appropriate file name for your .bib file.
-% \bibliography{your-bibliography-file} 
-% \bibliographystyle{plain}
+\bibliographystyle{plainnat} % This style is compatible with natbib and author-year
+\bibliography{\jobname}
 
 \end{document}
