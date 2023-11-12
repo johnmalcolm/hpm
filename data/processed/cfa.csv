@@ -1,0 +1,61 @@
+Bundle,Original Description,Code,Loading,SE,t-value,p-value,significance
+Environmental Practices,"Environmentally preferable packaging for the products that you produce (recycled content, less volume, reusable packaging)",ENVRTX21,0.8994771785501738,0.0663490719168009,13.556740924395786,7.22767470322088e-42,***
+Environmental Practices,Using a third party to monitor working conditions at supplier facilities,ENVRTX37,0.9500571191254857,0.07720420766469308,12.30576866032607,8.432974797015571e-35,***
+Environmental Practices,Water efficiency,ENVRTX02,0.9648699849457499,0.06959451161076266,13.864167771478902,1.0443027952932359e-43,***
+Environmental Practices,Substituting environmental preferable direct materials or supplies for harmful or non-renewable ones,ENVRTX22,0.9193096352396305,0.06806755487586429,13.505841908324573,1.444528926441991e-41,***
+Environmental Practices,"Providing design specification to suppliers in line with environmental requirements (e.g. green purchasing, black list of raw materials)",ENVRTX39,1.0177836330997545,0.07374409937803243,13.801560283248117,2.493956089182619e-43,***
+Environmental Practices,"Environmental improvements in the disposition of your organization’s scrap or excess material (re-use, recycling, etc.)",ENVRTX23,0.8878659845571094,0.06524154454160608,13.608905043486459,3.5451535235935534e-42,***
+Environmental Practices,Working with customers to help them achieve environmental objectives,ENVRTX18,1.0369173018140825,0.07330169266740069,14.145884823137632,1.9801031869874826e-45,***
+Environmental Practices,Complying with a customer’s supplier code of conduct,ENVRTX13,0.9677374908038952,0.07382314881590082,13.108862278649559,2.9296022955499205e-39,***
+Environmental Practices,Starting or maintaining a formal M/WBE supplier purchase program,ENVRTX33,0.9991240163914165,0.07716448808202343,12.947976993372636,2.4122746569606835e-38,***
+Environmental Practices,"Reducing waste in internal processes (e.g., improving yield or efficiency)",ENVRTX03,0.8958109087150442,0.06302634370618009,14.213277433499684,7.57935729574317e-46,***
+Environmental Practices,Life-cycle analysis of the “cradle to grave” environmental impact of materials/products,ENVRTX20,1.06229436579897,0.07462838595420067,14.234454520440769,5.599816810695689e-46,***
+Environmental Practices,Incorporating environmental considerations in evaluating and selecting suppliers,ENVRTX38,1.0465556744894462,0.07091223783502125,14.758463509842674,2.7139342437957552e-49,***
+Environmental Practices,Decreasing the likelihood or impact of an environmental accident,ENVRTX08,0.9107654785879771,0.06460199934435487,14.09810048963388,3.901298853881106e-45,***
+Environmental Practices,Pollution prevention (eliminating emissions or waste),ENVRTX05,0.9261195602323522,0.06476066034101756,14.300650354020162,2.1677423768533633e-46,***
+Environmental Practices,"Giving preference to materials with third party certifications, such as Green Seal, FSC or Energy Star",ENVRTX30,1.0061554662183616,0.07337192372193561,13.713085539796971,8.47745890694099e-43,***
+Environmental Practices,Environmental improvements in the disposition of your organization’s equipment,ENVRTX24,0.9922592423477572,0.06483329951553991,15.304777787993379,7.104421891596304e-53,***
+Environmental Practices,Purchasing from minority- or women-owned business enterprise (M/WBE) suppliers,ENVRTX32,0.9965966790125275,0.07246992425963145,13.751865883592076,4.963275045899031e-43,***
+Environmental Practices,Visiting suppliers’ plants or ensuring that they are not using sweatshop labor,ENVRTX34,1.030112373306046,0.07744818685113797,13.300664808151158,2.29419323952205e-40,***
+Environmental Practices,"Improving the workforce environment (e.g., indoor air quality)",ENVRTX04,0.8827552952002161,0.06285128817798238,14.045142443229297,8.250233485339834e-45,***
+Environmental Practices,Encouraging suppliers to improve the environmental performance of their processes,ENVRTX29,1.0785650666565711,0.06993015981655434,15.423460628231624,1.1383723480912387e-53,***
+Environmental Practices,"Involvement of suppliers in the re-design of internal processes (e.g. remanufacturing, reduction of by-products)",ENVRTX41,1.00398562182507,0.06934728368125591,14.477648849805496,1.6773724930938438e-47,***
+Environmental Practices,"Co-development with suppliers to reduce the environmental impact of the product (e.g. eco-design, green packaging, recyclability)",ENVRTX40,1.0298041360011232,0.06985536155114931,14.741948407883948,3.4663774175129426e-49,***
+Environmental Practices,Reduction/avoidance of land consumption,ENVRTX09,1.0416653397588578,0.07677222823197599,13.56825721680694,6.177338560529767e-42,***
+Environmental Practices,Carbon tracking/carbon footprint calculation of supply chain,ENVRTX17,1.0440234415609222,0.07787907998357324,13.40569818982369,5.599383791534962e-41,***
+Environmental Practices,"Remediation projects, such as cleanup or restoration from past practices",ENVRTX07,1.0655852641716967,0.08170642614584643,13.04163349734109,7.092109939912631e-39,***
+Environmental Practices,"Improvements in outbound transportation, such as fuel efficiency or load matching",ENVRTX11,1.0363522772224238,0.07357692494369979,14.085289348738462,4.6773907350009695e-45,***
+Environmental Practices,"Improvements in inbound transportation, such as fuel efficiency or load matching",ENVRTX10,1.0284120241124826,0.07222227705881776,14.239540291355599,5.2068444277257216e-46,***
+Environmental Practices,Energy efficiency or renewable energy,ENVRTX01,0.9360794712413115,0.06955452633749686,13.458210709382273,2.755071628071065e-41,***
+Environmental Practices,Complying with an industry-wide code of conduct,ENVRTX14,0.9619867374538893,0.06621098026858399,14.529111841443857,7.924117389740794e-48,***
+Environmental Practices,Other compliance or auditing program focused on your plant (not on your suppliers),ENVRTX15,0.9709021339807213,0.06773582199894035,14.333658400069464,1.3482688420582676e-46,***
+Environmental Practices,Seeking or maintaining ISO14001 certification,ENVRTX12,0.9645380526035048,0.08009762227895133,12.042031026144125,2.1363034239514673e-33,***
+Environmental Practices,Requesting that your suppliers sign a code of environmental conduct,ENVRTX31,1.064476907652487,0.07985894152912501,13.329464268747742,1.5601397343275546e-40,***
+Environmental Practices,Ensuring that suppliers comply with child labor laws,ENVRTX35,1.0521222051099794,0.08365129454508402,12.57747666466699,2.8085834457173907e-36,***
+Environmental Practices,Asking suppliers to pay a “living wage”,ENVRTX36,1.027147216521352,0.08288095595622473,12.393042583435703,2.8502058273115467e-35,***
+Environmental Practices,"Pollution control (scrubbing, waste treatment)",ENVRTX06,0.9346172668010307,0.06995866643135268,13.359563789257319,1.0417281250018984e-40,***
+Environmental Practices,"Implementation of a certified environmental management system, such as ISO 14000.",EPRACX01,1.0015818948566764,0.08382592728662853,11.948354492183988,6.622345590923573e-33,***
+Environmental Practices,"Implementation of internal environmental management procedures (e.g. environmental training program, internal environmental audit, newsletter).",EPRACX02,0.9979407865946217,0.07371629516901321,13.537587372053773,9.381995898563172e-42,***
+Environmental Practices,Use of cleaner technologies in the production process (e.g. abatement equipment) to reduce pollution emissions and/or resource use.,EPRACX03,0.9981006280348083,0.06976671975103038,14.306257074958255,1.999910702892547e-46,***
+Environmental Practices,Environment-friendly product design.,EPRACX04,1.0592290797311488,0.07261834017994098,14.586247456310417,3.435836368245634e-48,***
+Environmental Practices,Environmental improvement of packaging.,EPRACX05,1.0016219021665804,0.06869944537059039,14.579766936449907,3.778043005629352e-48,***
+Environmental Practices,Use of environment-friendly raw materials.,EPRACX06,0.9985136248633896,0.06907596709770424,14.455297070992083,2.3212611350295243e-47,***
+JIT Practices,We have laid out the shop floor so that processes and machines are in close proximity to each other.,LAYOUTN01,0.8733915227216411,0.06786744169553707,12.869079795873239,6.719794978046145e-38,***
+JIT Practices,The layout of our shop floor facilitates low inventories and fast throughput.,LAYOUTN02,0.9152847550510868,0.0691777319203868,13.230915926882979,5.817409021007121e-40,***
+JIT Practices,"Our processes are located close together, so that material handling and part storage are minimized.",LAYOUTN03,0.9413953012292686,0.07196886949526583,13.08059036957909,4.2512546168080065e-39,***
+JIT Practices,We have located our machines to support JIT production flow.,LAYOUTN04,0.9697242355040114,0.07224495317277506,13.422726334736478,4.450345464928942e-41,***
+JIT Practices,Our suppliers deliver to us on a just-in-time basis.,JITDELN01,1.0426969409336413,0.07574512374201421,13.765862268375693,4.089753377557875e-43,***
+JIT Practices,We receive daily shipments from most suppliers.,JITDELN02,0.9315324249599362,0.08030863766047458,11.59940514615911,4.149524460546749e-31,***
+JIT Practices,Our suppliers are linked with us by a pull system.,JITDELN03,1.0153474737614214,0.07892338433484636,12.864976360537593,7.086360161499945e-38,***
+JIT Practices,"Suppliers fill our kanban containers, rather than filling purchase orders.",KANBANN01,0.9477073308197851,0.08061378163392255,11.756145309290225,6.566429034500917e-32,***
+JIT Practices,We use a kanban pull system for production control.,KANBANN02,1.032643410803495,0.08114169056355765,12.726422183607742,4.217253977018343e-37,***
+JIT Practices,"We use kanban squares, containers or signals for production control.",KANBANN03,1.0640247306715191,0.08118370664338459,13.106382729547656,3.0269475424319864e-39,***
+Environmental Performance,Overall environmental performance.,EPERFX01,0.9655908216798497,0.062320347328900266,15.493989733142408,3.809010740363667e-54,***
+Environmental Performance,Raw materials consumption.,EPERFX02,0.9482383245010626,0.06059566615704067,15.648616223536406,3.395220275644355e-55,***
+Environmental Performance,Energy consumption.,EPERFX03,0.9869861958457005,0.060608145847703625,16.284711931722892,1.2672447864206396e-59,***
+Environmental Performance,Water consumption.,EPERFX04,0.9819737983044263,0.05987249065193582,16.40108483231567,1.8785332896433367e-60,***
+Environmental Performance,Emissions to air.,EPERFX05,0.9867791871568183,0.06164197979461074,16.0082331950521,1.1194370133948453e-57,***
+Environmental Performance,Releases to water.,EPERFX06,0.9714146405855935,0.06309133000002239,15.396959306219234,1.7154851924376773e-53,***
+Environmental Performance,Solid waste generation (e.g. landfill capacity consumed).,EPERFX07,0.9472218163593092,0.06078340740810087,15.583559013064951,9.41628179367318e-55,***
+Environmental Performance,Waste recovery (e.g. recycling).,EPERFX08,0.9213893855872373,0.0626075170016895,14.716913075507739,5.020605948264619e-49,***
+Environmental Performance,Fines or other violations of environmental rules/regulations.,EPERFX09,0.9820844468459755,0.07200300553060754,13.639492401862366,2.331779485683293e-42,***
