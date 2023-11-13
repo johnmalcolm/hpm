@@ -335,8 +335,148 @@
         "original_description": "We use kanban squares, containers or signals for production control."
     },
     {
+        "original_code": "LINKCN01",
+        "descriptive_name": "Our customers receive just-in-time deliveries from us.",
+        "original_description": "Our customers receive just-in-time deliveries from us."
+    },
+    {
+        "original_code": "LINKCN02",
+        "descriptive_name": "We always deliver on time to our customers.",
+        "original_description": "We always deliver on time to our customers."
+    },
+    {
+        "original_code": "LINKCN03",
+        "descriptive_name": "We can adapt our production schedule to sudden production stoppages by our",
+        "original_description": "We can adapt our production schedule to sudden production stoppages by our customers."
+    },
+    {
+        "original_code": "LINKCN04",
+        "descriptive_name": "Our customers have a pull type link with us.",
+        "original_description": "Our customers have a pull type link with us."
+    },
+    {
+        "original_code": "LINKCN05",
+        "descriptive_name": "Our customers are linked with us via JIT systems.",
+        "original_description": "Our customers are linked with us via JIT systems."
+    },
+    {
+        "original_code": "SCHEDN01",
+        "descriptive_name": "We usually meet the production schedule each day.",
+        "original_description": "We usually meet the production schedule each day."
+    },
+    {
+        "original_code": "SCHEDN02",
+        "descriptive_name": "We usually complete our daily schedule as planned.",
+        "original_description": "We usually complete our daily schedule as planned."
+    },
+    {
+        "original_code": "SCHEDR03",
+        "descriptive_name": "We build extra slack into our daily schedule, to allow for catching up.",
+        "original_description": "We build extra slack into our daily schedule, to allow for catching up."
+    },
+    {
+        "original_code": "SETUPN01",
+        "descriptive_name": "We are aggressively working to lower setup times in our plant.",
+        "original_description": "We are aggressively working to lower setup times in our plant."
+    },
+    {
+        "original_code": "SETUPN02",
+        "descriptive_name": "We have low setup times of equipment in our plant.",
+        "original_description": "We have low setup times of equipment in our plant."
+    },
+    {
+        "original_code": "SETUPN03",
+        "descriptive_name": "Our workers practice setups, in order to reduce the time required.",
+        "original_description": "Our workers practice setups, in order to reduce the time required."
+    },
+    {
         "original_code": "ACCTGX51",
         "descriptive_name": "Employees",
         "original_description": "Number of personnel employed"
+    },
+    {
+        "original_code": "OUTCMX01",
+        "descriptive_name": "Environmental performance",
+        "original_description": "Environmental performance"
+    },
+    {
+        "original_code": "OUTCMX02",
+        "descriptive_name": "Regulatory performance",
+        "original_description": "Regulatory performance"
+    },
+    {
+        "original_code": "OUTCMX03",
+        "descriptive_name": "Risk of an adverse environmental event (for example, a spill)",
+        "original_description": "Risk of an adverse environmental event (for example, a spill)"
+    },
+    {
+        "original_code": "OUTCMX04",
+        "descriptive_name": "Cost performance",
+        "original_description": "Cost performance"
+    },
+    {
+        "original_code": "OUTCMX05",
+        "descriptive_name": "Revenue performance",
+        "original_description": "Revenue performance"
+    },
+    {
+        "original_code": "OUTCMX06",
+        "descriptive_name": "Product quality",
+        "original_description": "Product quality"
+    },
+    {
+        "original_code": "OUTCMX07",
+        "descriptive_name": "Product performance",
+        "original_description": "Product performance"
+    },
+    {
+        "original_code": "OUTCMX08",
+        "descriptive_name": "Supply chain integration and supplier relationships",
+        "original_description": "Supply chain integration and supplier relationships"
+    },
+    {
+        "original_code": "OUTCMX09",
+        "descriptive_name": "Manufacturing performance",
+        "original_description": "Manufacturing performance"
+    },
+    {
+        "original_code": "OUTCMX10",
+        "descriptive_name": "Stakeholder (community, investors) relationships",
+        "original_description": "Stakeholder (community, investors) relationships"
+    },
+    {
+        "original_code": "OUTCMX11",
+        "descriptive_name": "Financial Performance",
+        "original_description": "Financial Performance"
+    },
+    {
+        "original_code": "UTCMX12",
+        "descriptive_name": "Toxic air emissions (CO2, VOC, COD, NOX, SO2)",
+        "original_description": "Toxic air emissions (CO2, VOC, COD, NOX, SO2)"
+    },
+    {
+        "original_code": "OUTCMX13",
+        "descriptive_name": "Soil contamination",
+        "original_description": "Soil contamination"
+    },
+    {
+        "original_code": "OUTCMX14",
+        "descriptive_name": "Water contamination",
+        "original_description": "Water contamination"
+    },
+    {
+        "original_code": "OUTCMX15",
+        "descriptive_name": "Use of natural resources (energy, water,etc.)",
+        "original_description": "Use of natural resources (energy, water,etc.)"
+    },
+    {
+        "original_code": "OUTCMX16",
+        "descriptive_name": "Consumption for hazardous/toxic materials",
+        "original_description": "Consumption for hazardous/toxic materials"
+    },
+    {
+        "original_code": "OUTCMX17",
+        "original_description": "Corporate reputation/image",
+        "descriptive_name": "Corporate reputation/image"
     }
 ]
