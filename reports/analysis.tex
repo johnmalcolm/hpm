@@ -28,9 +28,12 @@
 \usepackage{pifont}
 \usepackage{longtable}  % For long tables spanning multiple pages
 \usepackage{booktabs}   % For top, mid and bottom rules
+\usepackage{caption}  % For captions in floating environments
 \usepackage{array}      % For table column formatting
 \usepackage{geometry}   % Optional: For setting page margins
 \usepackage{pdflscape}  % For the landscape environment
+\usepackage{microtype}
+\usepackage{float}
 \usepackage[nointegrals]{wasysym}
 \urlstyle{rm}
 \makeatletter
@@ -161,8 +164,6 @@
 \titlespacing{\subparagraph}{0pt}{.5\baselineskip}{10pt}  
 
 
-\usepackage[tablesonly]{endfloat}
-
 
 \makeatletter\def\oupIndent{1pt}
 \def\author#1{\gdef\@author{\hskip-\dimexpr(\tabcolsep)\hskip\oupIndent\parbox{\dimexpr\textwidth-\oupIndent}{\centering\bfseries#1}}}
@@ -233,10 +234,9 @@ Complimentarity of lean JIT/ environemntal practices
 Moderating effect of lean JIT 
 
 \include{tables/cfa}
-
 \section{Results}
-WIP
-
+\input{tables/performance_means}
+adf ba 
 \section{Discussion}
 WIP
 

@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Your Custom Caption}
+    \label{tab:your_label}
+    \begin{tabular}{lrll}
+\toprule
+Category & Frequency & Percentage & Mean of Performance \\
+\midrule
+High JIT \& Environmental & 1 & 25.00 & nan \\
+Mainly Environmental & 1 & 25.00 & nan \\
+Mainly JIT & 1 & 25.00 & nan \\
+Low JIT \& Environmental & 1 & 25.00 & nan \\
+\bottomrule
+\end{tabular}
+\end{table}
