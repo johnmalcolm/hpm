@@ -508,7 +508,6 @@ all_codes = (
     + environmental_performance
     + jit_practices
     + [employees]
-    + sustainability_outcomes
 )
 
 with open(os.path.join(PROCESSED_DATA_PATH, "codes.json"), "w") as f:
