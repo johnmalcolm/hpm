@@ -506,6 +506,7 @@ all_codes = (
     environmental_practices_iniatives
     + environmental_practices
     + environmental_performance
+    + sustainability_outcomes
     + jit_practices
     + [employees]
 )
