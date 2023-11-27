@@ -10,3 +10,61 @@ The data used in the research comes from the High Performance Manufacturing proj
 
 Our research methodology is based on \cite{furlanComplementarityLeanManufacturing2011} who used bundles to test for complementarity amongst an aggregate of practices. 
 We were also inspired by \cite{maoLowCarbonSupply2017} use of moderating variables to test for more specific environmental effects. 
+For the EFA section of the paper we have followed the recommendations provided by \cite{beaversPracticalConsiderationsUsing2013}.
+\subsection*{Exploratory Factor Analysis}
+The first step of our analysis was to identify the underlying factors of the data, we have a theoritical understanding of the underlying factors of the data, however, we have used exploratory factor analysis (EFA) to first validate our theoritical understanding.
+The EFA was conducted using the \texttt{FactorAnalyzer} package for Python \citep{perssonPythonPackagesExploratory2021}.
+The EFA was conducted on the various environmental practices, environmental performance and Lean/JIT scales provided in the HPM round 4 dataset.
+\\
+The EFA was conducted using the minimum residuals extraction method. This was due to the methods flexibility, and the underlying distribution of the data, excluding other methods such as Maximum Likelihood. 
+Principal Axis Factoring has not been explored but may also be worth exploring in future research.
+We used an oblique rotation method due to the theoritical understanding that the factors will be correlated.
+The oblique rotation was conducted using the \texttt{promax} method \texttt{FactorAnalyzer}.
+\\
+Following \cite{schonrock-ademaNecessaryStepsFactor2009} \& \cite{costelloBestPracticesExploratory2005} we used multiple criteron to determine the number of factors to extract.
+This was an iterative process of extracting factors and examining the factor loadings and domain relevance of the factors.
+\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/scree.png}
+    \caption{Scree plot indicated an elbow somewhere between 3 and 7 factors}
+    \label{fig:model}
+\end{figure}
+\\
+The first method was the Kaiser criterion, which states that factors with eigenvalues greater than 1 should be extracted.
+This was first of all not feasable as it produced over 15 factors most of which with very low loadings and little domain relevance, with factors cross loading on multiple variables.
+The second method was the scree plot, which is a visual method of determining the number of factors to extract, from this we determined that the elbow was somewhere between 3 and 7 factors (Figure 1). 
+\\ 
+Working first with seven factors we examined the loadings and domain relevance, we found that the factors had little domain relevace as well as low loadings. Strikingly Factors 5, 6, 7 only contained 3 practices each with loadings above 0.50. (Table 1).
+\input{tables/7_factor_efa}
+We then reduced the number of factors to 6 and then 5, and found that the factors had a higer domain relevant and had higher loadings, but still faced many cross loading issues especially with the Lean/JIT groups.
+The domain relevance of these factors are also questionable as JIT was broken down into multiple factors with insufficient loadings to build a domain relevant factor.
+Eventually we settled on 4 factors, which had high loadings and were domain relevant, revealing a domain relevant breakdown of the environmental practices while retaining the domain relevance of the Lean/JIT and enviromental performance groups.
+3 factors also had high loadings and domain relevance, but as we had no reason to reject the breakdown in environmental practices suggested by the EFA we decided to continue with 4 factors. See Table 2, 3, 4 \& 5 below for a breakdown of our final bundles.
+\input{tables/factor1.tex} \\
+\input{tables/factor2.tex} \\
+\input{tables/factor3.tex} \\
+\input{tables/factor4.tex} \\\\
+\input{tables/variance} \\\\
+One remaining point on the EFA process recommended by \citep{beaversPracticalConsiderationsUsing2013} is to check the amount of variance explained by the factors.
+We found that the 4 factor model explained ~41\% of the variance in the data, while the 7 factor model explained ~49\% of the variance in the data.
+Due to the lack of interpretability of the 7 factor model and above models we decided to continue with the 4 factor model. (Table 6)
+\\
+Although \citep{furlanComplementarityLeanManufacturing2011} used a CFA to identify the factors, we have used an EFA to identify smaller bundles and validate theoretical assumptions. We also performed a CFA based on the relevant HPM round 4 scales. The results of the CFA analysis are included in the appendix.
+\subsection*{Complimentarity Analysis}
+The first step in the complimentarity analysis as demonstrated by \citep{furlanComplementarityLeanManufacturing2011} was to create a dummy variable for each bundle based on the factors.
+Dummy variables were created for each bundle, with the dummy variable being 1 if the firm scored above the median on all practices in the bundle, and 0 otherwise.
+From these 4 categories were constructed based on the combinations of bundles, these categories are:
+\begin{itemize}
+    \item High JIT \& Environmental
+    \item Low JIT \& Environmental
+    \item Mainly Environmental
+    \item Mainly JIT
+\end{itemize}
+See table 7 below for a breakdown of the categories.
+\input{tables/performance_means}
+The next step was to conduct a Tukey HSD test to determine if there was a significant difference between the mean environmental performance of the four groups.
+The results of the Tukey HSD test will be discussed in the results section.
+\subsection*{Regression Analysis}
+The final step in the analysis was to conduct a regression analysis to determine if there was a significant moderating effect of JIT on the relationship between environmental practices and environmental performance.
+The regression analysis was conducted using the \texttt{statsmodels} package for Python \citep{seaboldStatsmodelsEconometricStatistical2010}.
