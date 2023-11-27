@@ -1,58 +1,24 @@
 \section{Results}
-\subsection*{Confirmatory Factor Analysis}
-Preliminary Discussion:
-
-- In the base article \cite{furlanComplementarityLeanManufacturing2011}, they have only six practices for each bundle.
-
-- Should we create subsamples to get down to six per factor, or is it okay to include everything?
-
-- The majority of loadings are above 0.8, and all statistically significant (p < 0.01).
-
-- We tried bundling sustainability outcomes at some stage too, but in the end, it seemed irrelevant to our research questions.
-
-- We also conducted an EFA to see if we could further breakdown the bundles (specifically environmental practices, which is a massive group).
-
-- We did not include EFA results here as it did not seem relevant to the research questions (should we include it or better use this time to diagnose our other models).
-
-% \input{tables/cfa}
-\subsection*{Practice Adoption}
-Preliminary Discussion:
-
-- Staying with \cite{furlanComplementarityLeanManufacturing2011}, we have created dummy variables for the study as seen in Table 2.
-
-- We will need to discuss how these dummy variables were created (splitting at the median point for high/low and then expanding to 4 categories based on the binary combinations).
-
-- We still have not run a t-test to confirm statistically significant means between dummy variables as per \cite{furlanComplementarityLeanManufacturing2011}.
-
-\subsection*{Tukey Analysis}
-Preliminary Discussion:
-
-- The Tukey analysis shows that the means of environmental performance differences are not statistically significant in certain cases.
-
-- This fact seems to already reject H0 as we have no difference in performance between the combination and the singular (mainly environmental).
-
-- For this reason, we probably do not need to run the OLS regression for complementarity as we can already see the marginal performance difference is not present.
-
-- What can we do to validate the assumptions of this modeling?
-
-\input{tables/tukey_results}
-\subsection*{Regression Models}
-Preliminary Discussion:
-
-- For our regression models, we have taken means of our CFA bundles (JIT and Env) and used them as the independent variables.
-
-- Again, we need to understand what the most important assumptions for this model are and how to validate them.
-
-- So far (controlling for plant size), we see no statistically significant results for the regression models besides environmental practices as correlated to emissions to air.
-
-- These results are surprising and make us question the validity of our models.
-
-- Is the reason for these results the fact that we bundle over 40 practices, and the dependent variables are too singular?
-
-- How can we diagnose and improve our models?
-
-- General comment for all models: we have not checked the 6 assumptions of linear models.
-
-- Where is most imporant to check for: normality, homoscedasticity, multicollinearity, autocorrelation, and linearity?
-
-
+\subsection*{Complimentarity Analysis of JIT \& Environmental Practices}
+First we run an ANOVA to test for statistically significant difference between the mean environmental performance outcomes of our four categories. 
+First we checked for a statistically significant difference, then we a Tukey HSD test to determine which categories are significantly different from each other. 
+See table 9 below for the results of our complimentarity test for the general environmental practices and JIT bundles.
+\input{tables/tukey_results_efa_gen} \\ 
+From the results we can see that there is no statistically significant difference between the means for High JIT \& High Env Practices and Mainly Environmental.
+There is also no statistically significant difference between the means for High JIT \& Environmental and Mainly JIT.
+Based on these results we can conclude that there is no marginal gains from the combination of JIT and environmental practices on our environmental performance bundle.
+It is worth noting that our environmental practices bundle was limited during the EFA to the top 8 with the highest loadings, despite this fact we similar results when running the same analysis on the full set of environmental peformance outcomes (see appendix). 
+\\
+For our second environmental practices bundle, focused on suppliers activity there was no statistically significant differences among categories based on ANOVA (p<0.05), so we did not run a Tukey HSD test.
+\subsection*{Moderating Effect on Specific Environmental Outcomes}
+Using mean of environmental performance outcomes as a dependent variable, we run a regression analysis to test for the moderating effect of JIT on the relationship between environmental practices and environmental performance.
+The results are presented in the tables below.
+\input{tables/regression_air_table_ega_gen}
+\input{tables/regression_waste_table_efa_gen}
+It is clear from the results that there is no statistically significant moderating effect of JIT on the relationship between environmental practices and environmental performance for the general environmental practices bundle.
+\\
+Below we will also present the results of the regression analysis for the supplier orientated environmental practices bundle.
+\input{tables/regression_air_table_efa_sup.tex}
+\input{tables/regression_waste_table_efa_sup.tex}
+Again, there is no statistically significant moderating effect of JIT on the relationship between environmental practices and environmental performance for the supplier orientated environmental practices bundle.
+It is worth noting that we do have a statistically significant result at p < 0.05 for our control variable of plant size in the regression analysis for solid waste generation in the supplier orientated environmental practices bundle.

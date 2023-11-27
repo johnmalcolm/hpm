@@ -48,21 +48,22 @@ Eventually we settled on 4 factors, which had high loadings and were domain rele
 \input{tables/variance} \\\\
 One remaining point on the EFA process recommended by \citep{beaversPracticalConsiderationsUsing2013} is to check the amount of variance explained by the factors.
 We found that the 4 factor model explained ~41\% of the variance in the data, while the 7 factor model explained ~49\% of the variance in the data.
-Due to the lack of interpretability of the 7 factor model and above models we decided to continue with the 4 factor model. (Table 6)
+Due to the lack of domain interpretability and the little contribution to overall variance of the factor above 4 we decided to continue with this model. (Table 6)
 \\
 Although \citep{furlanComplementarityLeanManufacturing2011} used a CFA to identify the factors, we have used an EFA to identify smaller bundles and validate theoretical assumptions. We also performed a CFA based on the relevant HPM round 4 scales. The results of the CFA analysis are included in the appendix.
 \subsection*{Complimentarity Analysis}
 The first step in the complimentarity analysis as demonstrated by \citep{furlanComplementarityLeanManufacturing2011} was to create a dummy variable for each bundle based on the factors.
 Dummy variables were created for each bundle, with the dummy variable being 1 if the firm scored above the median on all practices in the bundle, and 0 otherwise.
-From these 4 categories were constructed based on the combinations of bundles, these categories are:
+From these 2 pairs of 2 binaries we created the following dummy variables to represent our practice bundles:
 \begin{itemize}
     \item High JIT \& Environmental
     \item Low JIT \& Environmental
     \item Mainly Environmental
     \item Mainly JIT
 \end{itemize}
-See table 7 below for a breakdown of the categories.
-\input{tables/performance_means}
+Each company was then assigned to one of these four categories based on their scores on the environmental practices and JIT scales. See tables 7 \& 8 below for an overview. 
+\input{tables/performance_means_efa}
+\input{tables/performance_means_efa_suppliers}
 The next step was to conduct a Tukey HSD test to determine if there was a significant difference between the mean environmental performance of the four groups.
 The results of the Tukey HSD test will be discussed in the results section.
 \subsection*{Regression Analysis}
